@@ -94,7 +94,7 @@ dev.off()
 # Protection (protection)
 png("slr-figures/protection.png", width=6.5, height=7, units="in", res=200)
 th <- theme(text=element_text(size=8), 
-            axis.text = element_text(size=rel(0.65)))
+            axis.text = element_text(size=rel(0.5)))
 p1 <- ggplot(slr.cp) + aes(x=year, y=NPVVP) + 
     geom_line() +
     facet_wrap(~ country, scales="free_y") +
